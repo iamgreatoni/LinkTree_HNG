@@ -1,28 +1,31 @@
-import {useState}  from 'react'
 import './ProfileImg.css'
 
 import Img from "../../../assets/profile_img.png";
 import CameraIcon from "../../../assets/camera.svg";
-import ShareIcon from "../../../assets/share.svg";
+import ShareIcon from "../../../assets/shareIcon.svg";
 
 function ProfileImg() {
-  const [hover, setHover] = useState(false);
 
   return (
-    <section className="profile">
-    <div className="profile-pic">
-      <div className="profile-pic-container">
-        <div className="profile-bg"></div>
-        <img src={Img} alt="profile-Pic" id="profile__img" />
-        <img src={CameraIcon} alt="camera" className="profile-camera" />
+    <header className="header">
+      <div className="header__container">
+        <div className="header__img">
+          <img src={Img} className='profile__img' id="profile__img" alt="profile img" />
+          <div className="overlay">
+            <img src={CameraIcon} className="overlay__icon" alt="camera icon" />
+          </div>
+        </div>
+        <h3 className="twitter" id="twitter">
+          IamGreat_Oni
+        </h3>
+        <p className="slack" id="slack">
+          onijohnoluwaseun
+        </p>
       </div>
-      <p id="twitter">IamGreat_Oni</p>
-      <p id="slack">onijohnoluwaseun</p>
-    </div>
-    <div className="profile-share-container" onMouseOver={() => setHover(!hover)}>
-      <img src={ShareIcon} alt="share profile" className="profile-share" />
-    </div>
-  </section>
+      <div className="share__icon" >
+        <img src={ShareIcon} className="share__img" alt="share icon" />
+      </div>
+    </header>
   )
 }
 

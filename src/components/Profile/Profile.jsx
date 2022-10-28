@@ -5,10 +5,10 @@ import './Profile.css'
 
 function Profile() {
   return (
-    <div>
+    <section className='top__section'>
       <ProfileImg />
       <Links />
-    </div>
+    </section>
   )
 }
 
