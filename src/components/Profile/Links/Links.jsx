@@ -1,16 +1,16 @@
 import React from 'react'
 import './Links.css'
 
-import { Data } from './data'
+import { data } from './data';
 
 function Links() {
-  const buttonLinks = Data.map((item) => {
-    <li key={item.id} id={item.id} >
+  const buttonLinks = data.map(item => (
+    <li key={item.id} id={item.id} className='card' >
       <a href={item.link} id={item.id} target="_blank" rel="noreferrer" >
         {item.description}
       </a>
     </li>
-  });
+  ));
 
   return (
     <div className='container'>

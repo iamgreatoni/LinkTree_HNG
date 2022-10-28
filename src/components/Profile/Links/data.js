@@ -1,4 +1,4 @@
-export const Data = [
+export const data = [
     {
         id: 'btn__twitter',
         description: "Twitter Link",
@@ -28,6 +28,5 @@ export const Data = [
         id: 'book__design',
         description: "Design Books",
         link: 'https://books.zuri.team/design-rules',
-    }    
+    },    
 ]
-
