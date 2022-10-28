@@ -1,10 +1,13 @@
 import React from 'react'
+import Footer from './components/Footer/Footer'
+import Profile from './components/Profile/Profile'
 
 function App() {
   return (
-    <div className="App">
-      WELCOME WORLD!
-    </div>
+    <main className="App">
+      <Profile />
+      <Footer />
+    </main>
   )
 }
 
