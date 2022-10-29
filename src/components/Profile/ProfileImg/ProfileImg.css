@@ -84,4 +84,38 @@
     box-shadow: 0px 0px 0px 4px #F2F4F7;
 }
 
+.shareMobile__img {
+    display: none;
+}
+
+
+/* Break Points */
+
+@media screen and (max-width: 1200px) {
+    .share__icon {
+        right: 120px;
+        top: -20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .shareMobile__img {
+        display: block;
+    }
+
+    .share__img {
+        display: none;
+    }
+
+    .share__icon {
+        right: 0px;
+        top: -20px;
+    }
+
+    .twitter {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
 

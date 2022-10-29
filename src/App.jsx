@@ -4,7 +4,7 @@ import Profile from './components/Profile/Profile'
 
 function App() {
   return (
-    <main className="App">
+    <main className="container">
       <Profile />
       <Footer />
     </main>

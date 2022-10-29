@@ -3,6 +3,7 @@ import './ProfileImg.css'
 import Img from "../../../assets/profile_img.png";
 import CameraIcon from "../../../assets/camera.svg";
 import ShareIcon from "../../../assets/shareIcon.svg";
+import ShareIconMobile from "../../../assets/sharemobileicon.svg";
 
 function ProfileImg() {
 
@@ -24,6 +25,7 @@ function ProfileImg() {
       </div>
       <div className="share__icon" >
         <img src={ShareIcon} className="share__img" alt="share icon" />
+        <img src={ShareIconMobile} className="shareMobile__img" alt="share icon" />
       </div>
     </header>
   )
