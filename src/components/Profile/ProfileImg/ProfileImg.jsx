@@ -3,7 +3,7 @@ import './ProfileImg.css'
 import Img from "../../../assets/profile_img.png";
 import CameraIcon from "../../../assets/camera.svg";
 import ShareIcon from "../../../assets/shareIcon.svg";
-import ShareIconMobile from "../../../assets/sharemobileicon.svg";
+import ShareIconMobile from "../../../assets/sharemobileIcon.svg";
 
 function ProfileImg() {
 
