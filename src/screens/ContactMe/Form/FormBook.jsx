@@ -2,8 +2,13 @@ import React from 'react'
 import './FormBook.css'
 
 
+
+
+
 function FormBook() {
   const name = "John Oni"
+
+
 
   return (
     <main className="main main__contact">
@@ -54,7 +59,10 @@ function FormBook() {
             You agree to providing your data to {name} who may contact you.
           </label>
         </div>
-        <button className='btn__submit' id="btn__submit">
+        <button 
+          className='btn__submit' 
+          id="btn__submit"
+        >
           Send message
         </button>
       </form>
