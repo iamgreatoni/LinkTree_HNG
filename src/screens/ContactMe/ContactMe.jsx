@@ -1,10 +1,13 @@
 import React from 'react'
-import './ContactMe.css'
+
+import Footer from '../../components/Footer/Footer'
+import FormBook from './Form/FormBook'
 
 function ContactMe() {
   return (
     <div>
-      Contact Me Screen.
+      <FormBook />
+      <Footer />
     </div>
   )
 }

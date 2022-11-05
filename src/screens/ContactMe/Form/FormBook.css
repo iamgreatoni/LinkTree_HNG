@@ -1,0 +1,174 @@
+.main {
+  padding-top: 126px;
+}
+.main__contact {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.main__heading {
+  font-size: 20px;
+  line-height: 30px;
+  color: #475467;
+  margin-top: 20px;
+  margin-bottom: 48px;
+}
+
+.form {
+  width: 720px;
+}
+
+.form__name {
+  display: flex;
+  column-gap: 24px;
+  margin-bottom: 24px;
+}
+
+.name__input,
+.email__input,
+.text__input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.name__input > label,
+.email__input > label,
+.text__input > label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.name__input > input,
+.email__input > input,
+.text__input > textarea {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  outline: none;
+  padding: 10px 14px;
+}
+
+.name__input > input,
+.email__input > input {
+  height: 44px;
+}
+
+.name__input > input {
+  width: 348px;
+}
+
+.email__input,
+.text__input {
+  margin-bottom: 24px;
+}
+
+.email__input > input,
+.text__input > input {
+  width: 100%;
+}
+
+.text__input > textarea {
+  resize: none;
+}
+.checkbox__input {
+  display: flex;
+}
+
+.form__checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+
+textarea {
+    font-family: "Inter", sans-serif;
+}
+
+.btn__submit {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #1570ef;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  margin-top: 34px;
+  cursor: pointer;
+}
+
+/* BREAKPOINTS */
+/* For medium devices */
+@media screen and (max-width: 768px) {
+  .main__contact  {
+    width: 576px;
+    margin-bottom: 118px;
+  }
+
+  .form {
+    width: 576px;
+    margin: 0 auto;
+  }
+
+  .form__name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__name > .name__input:first-child {
+    margin-bottom: 24px;
+  }
+
+  .name__input > input {
+    width: 576px;
+  }
+
+  .main__heading {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main__contact {
+    width: 350px;
+    margin-bottom: 64px;
+  }
+
+  .form {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .name__input > input {
+    width: 350px;
+  }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .main__contact {
+    max-width: 250px;
+    margin-bottom: 64px;
+  }
+
+  .name__input > input {
+    width: 250px;
+  }
+
+  .form {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
