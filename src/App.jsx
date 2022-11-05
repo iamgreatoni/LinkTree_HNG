@@ -1,12 +1,10 @@
 import React from 'react'
-import Footer from './components/Footer/Footer'
-import Profile from './components/Profile/Profile'
+import HomeDetails from './screens/Home/HomeDetails'
 
 function App() {
   return (
     <main className="container">
-      <Profile />
-      <Footer />
+      <HomeDetails />
     </main>
   )
 }
